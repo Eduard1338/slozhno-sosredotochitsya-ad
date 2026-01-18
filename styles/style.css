@@ -102,7 +102,7 @@
   display: flex;
   justify-content: flex-start;
 }
-.header__title-name {
+.title-name{
   color: var(--title-color);
   font-size: 157px;
   font-weight: 700;
@@ -254,7 +254,7 @@
   height: 100%;
   width: 100%;
 }
-.footer__text {
+.title-name {
   display: flex;
   justify-content: center;
   align-items: center;
