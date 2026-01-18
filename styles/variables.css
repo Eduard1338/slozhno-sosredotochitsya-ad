@@ -2,9 +2,9 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root{
-  --bg-image:url('cover-image.png')
+:root {
+  --bg-image: url("cover-image.png");
 }
-.white-theme{
-  --bg-image:url('cover-image-light.png')
+.white-theme {
+  --bg-image: url("cover-image-light.png");
 }
