@@ -342,13 +342,14 @@
     position: relative;
     justify-content: end;
     gap: 10px;
-    margin-block-start: 192px;
+    margin-block-start: 170px;
   }
   .header__content{
-    margin-block-start: -100px;
+    margin-top: 35px;
   }
   .header__title {
     font-size: 120px;
+
   }
 
   .header__description {
