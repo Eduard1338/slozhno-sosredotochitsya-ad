@@ -345,7 +345,8 @@
     margin-block-start: 170px;
   }
   .header__content{
-    margin-top: 35px;
+    margin-top: -255px;
+
   }
   .header__title {
     font-size: 120px;
