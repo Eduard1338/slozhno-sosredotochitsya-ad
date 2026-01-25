@@ -329,24 +329,46 @@
   }
   .header {
     display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 1024px;
+    position: relative;
   }
   .header__theme-menu {
-    justify-content: end;
-    align-items: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 20px;
     padding-right: 20px;
+    width: 100%;
   }
 
   .header__theme-menu-list {
     flex-direction: column;
-    position: relative;
-    justify-content: end;
     gap: 10px;
     padding-top: 170px;
+    position: relative;
+  }
+  .header__logo-menu {
+    position: absolute;
+    top: 20px;
+    right: 30px;
   }
   .header__title {
     display: flex;
     flex-direction: column;
     font-size: 120px;
+    margin-top: 0;
+  }
+  .header__content {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 
   .header__description {
