@@ -33,8 +33,8 @@
   border-left: 1px solid var(--decor-color);
 }
 .header {
-  display: flex; /* Изменяем grid на flex для простого центрирования */
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   background-image: var(--bg-image);
   background-attachment: fixed;
   background-size: cover;
@@ -42,7 +42,7 @@
   position: relative;
   min-height: 768px;
   height: 100vh;
-  padding: 20px; /* Добавляем отступы */
+  align-items: center;
 }
 .header__theme-menu-button {
   background: transparent;
@@ -122,10 +122,10 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; 
-  margin-top: auto;
-  margin-bottom: auto;
+  justify-content: center; /* Центрируем заголовок по вертикали */
+  align-items: start; /* Центрируем заголовок по горизонтали */
+  position: relative;
+  padding-top: 110px;
   width: 100%;
   height: 100%;
 }
@@ -345,6 +345,7 @@
   }
   .header__title {
     display: flex;
+    flex-direction: column;
     font-size: 120px;
   }
 
