@@ -344,7 +344,7 @@
   }
 
   .header__theme-menu-list {
-     position: absolute;
+    position: absolute;
     top: 190px;
     right: 20px;
     flex-direction: column;
@@ -363,12 +363,11 @@
     margin-top: 0;
   }
   .header__content {
-     flex: 1; /* Занимает всё доступное пространство */
+    flex: 1; /* Занимает всё доступное пространство */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Вот оно - вертикальное центрирование! */
     align-items: flex-start; /* Выравнивание по левому краю */
-    padding-left: 20px;
     margin-top: 0 !important;
     padding-top: 0 !important;
   }
@@ -379,6 +378,7 @@
   }
   .header__description-text {
     width: 364px;
+    padding-top: 0 !important;
   }
 
   .focus-why {
@@ -408,6 +408,13 @@
   }
   .footer__title {
     font-size: 120px;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
   }
 }
 
