@@ -328,8 +328,9 @@
     max-width: 768px;
   }
   .header {
-    display: grid;
-    grid-template-rows: auto 1fr;
+    display: flex;
+    flex-direction: column;
+    min-height: 1024px;
     position: relative;
   }
   .header__theme-menu {
@@ -343,10 +344,12 @@
   }
 
   .header__theme-menu-list {
+     position: absolute;
+    top: 190px;
+    right: 20px;
     flex-direction: column;
     gap: 10px;
-    padding-top: 170px;
-    position: relative;
+    z-index: 2;
   }
   .header__logo-menu {
     position: absolute;
@@ -360,9 +363,12 @@
     margin-top: 0;
   }
   .header__content {
+     flex: 1; /* Занимает всё доступное пространство */
     display: flex;
-    justify-content: center;
-    position: relative;
+    flex-direction: column;
+    justify-content: center; /* Вот оно - вертикальное центрирование! */
+    align-items: flex-start; /* Выравнивание по левому краю */
+    padding-left: 20px;
     margin-top: 0 !important;
     padding-top: 0 !important;
   }
