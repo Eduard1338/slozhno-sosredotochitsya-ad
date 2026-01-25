@@ -125,6 +125,7 @@
   justify-content: center; /* Центрируем заголовок по вертикали */
   align-items: start; /* Центрируем заголовок по горизонтали */
   position: relative;
+  padding-top: 110px;
   width: 100%;
   height: 100%;
 }
@@ -341,8 +342,6 @@
     justify-content: end;
     gap: 10px;
     margin-block-start: 170px;
-  }
-  .header__content {
   }
   .header__title {
     display: flex;
