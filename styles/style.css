@@ -341,17 +341,10 @@
     position: relative;
     justify-content: end;
     gap: 10px;
-    margin-block-start: 170px;
+    padding-top: 170px;
   }
   .header__title {
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Центрируем заголовок по вертикали */
-    align-items: start; /* Центрируем заголовок по горизонтали */
-    position: relative;
-    padding-top: 110px;
-    width: 100%;
-    height: 100%;
     font-size: 120px;
   }
 
@@ -415,7 +408,6 @@
 
   .header__title-name {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-top: 65px;
     padding-left: 10px;
   }
 
