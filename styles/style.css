@@ -378,7 +378,6 @@
   }
   .header__description-text {
     width: 364px;
-    padding-top: 0 !important;
   }
 
   .focus-why {
@@ -408,13 +407,11 @@
   }
   .footer__title {
     font-size: 120px;
+    justify-content: center;
+    align-items: center;
   }
   .footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    position: relative;
   }
 }
 
