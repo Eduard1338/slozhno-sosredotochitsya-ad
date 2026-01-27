@@ -349,7 +349,6 @@
     flex-direction: column;
     gap: 10px;
     z-index: 2;
-   
   }
   .header__logo-menu {
     position: absolute;
@@ -365,8 +364,8 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: flex-start; 
+    justify-content: center;
+    align-items: flex-start;
     padding-top: 0 !important;
     gap: 60px;
     margin-top: 225px;
@@ -375,8 +374,6 @@
   .header__description {
     display: flex;
     justify-content: right;
-
-    
   }
   .header__description-text {
     width: 364px;
@@ -421,130 +418,228 @@
 
 /* Адаптивность ДЛЯ МОБИЛЬНЫХ (< 768px) */
 @media (width < 768px) {
+  /* Общие настройки */
+  .page {
+    max-width: 100%;
+    min-width: 375px;
+  }
+
+  /* HEADER */
+  .header {
+    min-height: 668px;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
   .header__theme-menu {
-    justify-content: flex-end;
-    margin-right: 10px;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 9;
+    width: auto;
   }
 
   .header__theme-menu-list {
-    position: absolute;
-    top: 10px;
-    right: 10px;
     flex-direction: column;
     align-items: flex-end;
+    position: static;
+    gap: 10px;
+    margin-top: 0;
   }
 
-  .header__theme-menu-item {
-    margin-bottom: 10px;
+  .header__logo-menu {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 10;
+  }
+
+  .header__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 0;
+    gap: 60px; /* Меньший отступ для мобильных */
+    padding-right: 10px;
+  }
+
+  .header__title {
+    font-size: 116px;
+    line-height: 0.825;
+    margin-top: 150px;
+  }
+
+  .header__description {
+    align-self: stretch; /* На всю ширину */
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .header__description-text {
+    width: 100%;
+    margin-top: 0;
     margin-right: 0;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.3;
   }
 
-  .header__title-name {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    padding-left: 10px;
+  /* MAIN CONTENT */
+  .main {
+    padding-top: 40px;
   }
 
-  .header__title-text {
-    width: 100%;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 55px;
-    margin-bottom: 65px;
-  }
-
-  .header__logo-name {
-    margin-right: 10px;
-  }
-
-  .circle-rec {
-    margin-left: 5px;
-  }
-
-  /* Основной контент */
+  /* Секция "Почему сосредоточиться так сложно" */
   .focus-why {
-    display: block;
-    padding: 50px 10px 0;
-  }
-
-  .info__block-title-section {
-    margin-left: 0;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-
-  .info__block-text-why {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
     margin-bottom: 50px;
   }
 
+  .info__block-title-section {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .info__block-text-why {
+    margin-bottom: 0;
+  }
+
+  .info__block-why-first,
+  .info__block-why-second {
+    margin-bottom: 20px;
+  }
+
+  .info__block-why-second {
+    margin-top: 0;
+  }
+
+  .info__title {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
   .info__block-text {
-    margin-right: 10px;
-    margin-left: 10px;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-right: 0;
+    margin-left: 0;
   }
 
+  /* Секция "Что снижает концентрацию" */
   .focus-reduce {
-    display: block;
-    grid-template-rows: 0.1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
     padding: 0 10px;
+    margin-top: 0;
   }
 
-  .focus-first {
-    grid-column: 1;
-    grid-row: 2;
+  .section__content--three-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
+  .info__block-focus-text {
+    margin-bottom: 20px;
+  }
+
+  .text-focus {
+    padding-bottom: 0;
+  }
+
+  /* Секция "Как концентрироваться лучше" */
   .focus-how {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 50px 10px;
+    padding: 0;
   }
 
   .title-focus-how {
     margin-bottom: 20px;
   }
 
+  .info__block-focus-how-text {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
   .text-how {
-    margin-right: 10px;
+    margin-right: 0;
+    margin-top: 10px;
   }
 
   /* Галерея */
   .gallery {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+
+  /* Убираем все grid-позиционирование для мобильных */
+  .images-sunset,
+  .images-ice-cream,
+  .images-tape,
+  .images-street,
+  .images-books {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .title-image {
+    margin-left: 10px;
+  }
+
+  /* FOOTER */
+  .footer {
+    min-height: 668px;
+    height: 100vh;
+    margin-top: 40px;
     padding: 10px;
   }
 
-  .images-sunset {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .images-ice-cream {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .images-tape {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  .images-books {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-  .images-street {
-    grid-column: 1;
-    grid-row: 5;
-  }
-
-  /* Футер */
-
-  .footer__text {
+  .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    padding-top: 240px;
-    padding-bottom: 240px;
-    margin-bottom: 0;
+    line-height: 0.825;
+    padding-top: 0;
+  }
+
+  /* Декоративные углы */
+  .decorated-zone::before {
+    top: 10px;
+    right: 10px;
+  }
+
+  .decorated-zone::after {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  /* Убираем специфичные классы для других устройств */
+  .header__title-text,
+  .header__logo-name,
+  .focus-first,
+  .footer__text {
+    display: none; /* Если они не используются */
   }
 }
