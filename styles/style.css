@@ -493,7 +493,7 @@
 
   /* MAIN CONTENT */
   .main {
-    padding-top: 30px;
+    padding-top: 40px;
   }
 
   /* Секция "Почему сосредоточиться так сложно" */
@@ -501,7 +501,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 10px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .info__block-title-section {
