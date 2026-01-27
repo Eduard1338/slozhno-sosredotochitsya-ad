@@ -435,7 +435,7 @@
 
   .header__theme-menu {
     position: absolute;
-    top: 45px;
+    top: 55px;
     right: 10px;
     display: flex;
     flex-direction: column;
@@ -454,7 +454,7 @@
 
   .header__logo-menu {
     position: absolute;
-    top: -30px;
+    top: -45px;
     right: 10px;
     display: flex;
     align-items: center;
@@ -469,19 +469,17 @@
     justify-content: center;
     align-items: flex-start;
     padding-top: 0;
-    gap: 60px; /* Меньший отступ для мобильных */
-    padding-right: 10px;
+    gap: 50px;
   }
 
   .header__title {
     font-size: 116px;
     line-height: 0.825;
-    margin-top: 150px;
+    margin-top: 170px;
   }
 
   .header__description {
-    align-self: stretch; /* На всю ширину */
-    width: 100%;
+    width: auto;
     max-width: 100%;
   }
 
@@ -496,7 +494,7 @@
 
   /* MAIN CONTENT */
   .main {
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   /* Секция "Почему сосредоточиться так сложно" */
@@ -504,7 +502,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .info__block-title-section {
@@ -541,18 +539,19 @@
 
   /* Секция "Что снижает концентрацию" */
   .focus-reduce {
-    padding: 0 10px;
     margin-top: 0;
   }
-
+  .info__block-title-section {
+    padding: 0 10px;
+  }
   .section__content--three-columns {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-
-  .info__block-focus-text {
-    margin-bottom: 20px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .text-focus {
@@ -563,12 +562,8 @@
   .focus-how {
     display: flex;
     flex-direction: column;
-    margin: 50px 10px;
+    margin: 40px 10px;
     padding: 0;
-  }
-
-  .title-focus-how {
-    margin-bottom: 20px;
   }
 
   .info__block-focus-how-text {
@@ -586,14 +581,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 10px;
-    margin-top: 20px;
-  }
-
-  .gallery img {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   /* Убираем все grid-позиционирование для мобильных */
@@ -608,25 +597,24 @@
 
   .title-image {
     margin-left: 10px;
+    margin-right: 10px;
   }
 
   /* FOOTER */
   .footer {
-    min-height: 668px;
-    height: 100vh;
-    margin-top: 40px;
+    margin-top: 0px;
     padding: 10px;
   }
 
   .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 0.825;
-    padding-top: 0;
+    padding-top: 380px;
   }
 
   /* Декоративные углы */
   .decorated-zone::before {
-    top: 10px;
+    top: 45px;
     right: 10px;
   }
 
